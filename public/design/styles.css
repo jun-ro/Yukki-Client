@@ -1,0 +1,272 @@
+body {
+    font-family: "Roboto", monospace;
+    background-color: black;
+    color: white;
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+.blur-overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    backdrop-filter: blur(3.5px);
+    animation: test 0.1s;
+}
+
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+#imageLogo {
+    width: 250px;
+    height: 240px;
+    transform: translateY(10vw)
+}
+
+#header {
+    transform: translateY(7vw);
+}
+
+.options {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+#School{
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 250px;
+    transform: translateY(8vw);
+    border-radius:20px;
+    border-color:white;
+    outline: none;
+    font-size: 20px;
+    transition: 1s;
+}
+
+
+#School:active{
+    background-color:white;
+}
+
+
+#Games{
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 250px;
+    transform: translateY(9vw);
+    border-radius:20px;
+    border-color:white;
+    outline: none;
+    font-size: 20px;
+    transition: 1s;
+}
+
+#Games:active{
+    background-color:white;
+}
+
+#search{
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 600px;
+    transform: translateY(6vw);
+    border-radius:20px;
+    border-color:white;
+    outline: none;
+    backdrop-filter: blur();
+    font-size: 20px;
+    transition: 1s;
+    text-indent: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+
+  @media screen and (max-width: 1920px) {
+
+    #header {
+        transform: translateY(8vw);
+    }
+
+    #School{
+        background-color: transparent;
+        color: white;
+        height: 40px;
+        width: 250px;
+        transform: translateY(9vw);
+        border-radius:20px;
+        border-color:white;
+        outline: none;
+        font-size: 20px;
+        transition: 1s;
+    }
+    
+    
+    #School:active{
+        background-color:white;
+    }
+    
+    
+    #Games{
+        background-color: transparent;
+        color: white;
+        height: 40px;
+        width: 250px;
+        transform: translateY(10vw);
+        border-radius:20px;
+        border-color:white;
+        outline: none;
+        font-size: 20px;
+        transition: 1s;
+    }
+    
+    #Games:active{
+        background-color:white;
+    }
+    
+    #search{
+        background-color: transparent;
+        color: white;
+        height: 40px;
+        width: 600px;
+        transform: translateY(8vw);
+        border-radius:20px;
+        border-color:white;
+        outline: none;
+        font-size: 20px;
+        transition: 1s;
+        text-indent: 5px;
+    }
+    .version {
+        position: relative;
+        z-index: 2;
+        right: 0;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        opacity:0.5;
+        float:left;
+        transform: translateY(20vw);
+    }
+    
+}
+
+
+.grid-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(18vw);
+    left:6px;
+    display: grid;
+    position: relative;
+    z-index: 2;
+    grid-template-columns: repeat(auto-fit, minmax(67px, 3vw));
+}
+
+.grid-item{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 13px;
+    border-color: white;
+    border-style: solid;
+    border-width:2px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+#button1{
+    background-image: url("./img/settings.png");
+    background-size: 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#button2{
+    background-image: url("./img/music.png");
+    background-size: 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.version {
+    position: relative;
+    z-index: 2;
+    right: 0;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    opacity:0.5;
+    float:left;
+    transform: translateY(17vw);
+}
+
+.music-player{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transform: translateY(8vw);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+  color: black;
+}
+
+#audio{
+    transform:translateX(-3vw);
+    background-color: transparent;
+    color: white;
+    
+}
+
+#button3{
+    background-image: url("./img/notdone.png");
+    background-size: 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#button4{
+    background-image: url("./img/notdone.png");
+    background-size: 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
