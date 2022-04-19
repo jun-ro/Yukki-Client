@@ -2,3 +2,4 @@
 
 ![Release](https://cdn.discordapp.com/attachments/949814514814160919/965815703187886130/unknown.png)
 
+Then open the zip file from your chrome files.
